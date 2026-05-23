@@ -1308,3 +1308,7 @@ p.form-message.success, p.form-message.error {
 .nav-cta{
     margin: 0;
 }
+
+.lokasi{
+    margin-left: 10px;
+}
