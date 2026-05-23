@@ -1228,9 +1228,10 @@ p.form-message.success, p.form-message.error {
 }
 
 #authArea{
-    margin-left: 40px;
+    margin-left: 15px;
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .nav-cta{
@@ -1289,7 +1290,7 @@ p.form-message.success, p.form-message.error {
 
 #userInfo {
     color: #f5e6d3;
-    margin: 0 10px;
+    margin: 0;
     font-weight: 600;
     transition: 0.3s;
 }
