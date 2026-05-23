@@ -1246,3 +1246,10 @@ p.form-message.success, p.form-message.error {
 .nav-cta:hover{
     background-color: #c63f13;
 }
+
+#userInfo {
+    color: #6f4e37;
+    margin: 0 10px;
+    font-weight: 600;
+    font-family: serif;
+}
