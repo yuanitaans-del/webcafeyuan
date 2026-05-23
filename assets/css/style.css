@@ -1289,7 +1289,8 @@ p.form-message.success, p.form-message.error {
 
 #userInfo {
     color: #f5e6d3;
-    margin: 0 18px;
+    margin-left: 35px;
+    margin-right: 10px;
     font-weight: 600;
     transition: 0.3s;
 }
