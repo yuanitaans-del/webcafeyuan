@@ -1312,3 +1312,7 @@ p.form-message.success, p.form-message.error {
 .lokasi{
     margin-left: 10px;
 }
+
+#userInfo {
+    margin-left: 18px;
+}
