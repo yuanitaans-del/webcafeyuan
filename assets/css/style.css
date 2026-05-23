@@ -1322,3 +1322,20 @@ p.form-message.success, p.form-message.error {
 #userInfo {
     margin: 0;
 }
+
+.navbar .collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+#userInfo {
+    margin: 0;
+}
