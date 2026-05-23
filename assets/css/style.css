@@ -1258,3 +1258,7 @@ p.form-message.success, p.form-message.error {
     height: 85vh;
     min-height: 650px;
 }
+
+.slider_content {
+    margin-top: -80px;
+}
