@@ -1253,3 +1253,8 @@ p.form-message.success, p.form-message.error {
     font-weight: 600;
     font-family: serif;
 }
+
+.header_slider .single_slider {
+    height: 85vh;
+    min-height: 650px;
+}
