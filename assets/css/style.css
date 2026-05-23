@@ -1218,22 +1218,6 @@ p.form-message.success, p.form-message.error {
 }
 
 
-/* LOGIN NAVBAR */
-#userInfo{
-    color: #fff;
-    margin-left: 30px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-#authArea{
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
 .nav-cta{
     background-color: #E54E1B;
     color: white;
@@ -1305,7 +1289,22 @@ p.form-message.success, p.form-message.error {
     margin-left: 18px;
 }
 
-/* tombol login */
-.nav-cta {
-    margin-left: 20px;
+#authArea{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: 18px;
+}
+
+#userInfo{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: #f5e6d3;
+    font-weight: 600;
+}
+
+.nav-cta{
+    margin: 0;
 }
