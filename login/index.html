@@ -10,52 +10,60 @@
 <body>
   <div class="login_form">
     <!-- Login form container -->
-    <form action="#">
-      <h3>Log in with</h3>
+    <form id="loginForm">
+  <h3>Silahkan Login</h3>
 
-      <div class="login_option">
-        <!-- Google button -->
-        <div class="option">
-          <a href="#">
-            <img src="logos/google.png" alt="Google" />
-            <span>Google</span>
-          </a>
-        </div>
+  <!-- Username -->
+  <div class="input_box">
+    <label for="username">Nama Pengguna</label>
+    <input 
+      type="text" 
+      id="username" 
+      placeholder="Nama Pengguna.." 
+      required="required"
+    />
+  </div>
 
-        <!-- Apple button -->
-        <div class="option">
-          <a href="#">
-            <img src="logos/apple.png" alt="Apple" />
-            <span>Apple</span>
-          </a>
-        </div>
-      </div>
+  <!-- Password -->
+  <div class="input_box">
+    <div class="password_title">
+      <label for="password">Password</label>
+    </div>
 
-      <!-- Login option separator -->
-      <p class="separator">
-        <span>or</span>
-      </p>
+    <input 
+      type="password" 
+      id="password"
+      placeholder="Password.." 
+      required="required"
+    />
+  </div>
 
-      <!-- Email input box -->
-      <div class="input_box">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter email address" required />
-      </div>
+  <!-- <p id="message"></p> -->
 
-      <!-- Paswwrod input box -->
-      <div class="input_box">
-        <div class="password_title">
-          <label for="password">Password</label>
-          <a href="#">Forgot Password?</a>
-        </div>
+  <!-- Login Button -->
+  <button type="submit">Masuk</button>
 
-        <input type="password" id="password" placeholder="Enter your password" required />
-      </div>
+  <!-- Social / Register -->
+  <div class="social">
+    <div class="go">
+      <a href="register.html">DAFTAR</a>
+    </div>
 
-       <!-- Login button -->
-      <button type="submit">Log In</button>
+    <div class="kanan">
+      <i class="fab fa-google"></i> Google
+    </div>
+  </div>
 
-      <p class="sign_up">Don't have an account? <a href="#">Sign up</a></p>
+  <!-- Home Button -->
+  <button 
+    type="button"
+    onclick="location.href='../index.html';"
+  >
+    Home
+  </button>
+
+  <!-- Alert -->
+  <div id="alertBox" class="alert" style="display:none;"></div>
     </form>
   </div>
   <script src="js/login.js"></script>
