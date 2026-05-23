@@ -1272,3 +1272,17 @@ p.form-message.success, p.form-message.error {
     font-size: 18px;
     max-width: 600px;
 }
+
+.header_slider {
+    height: 80vh;
+}
+
+.single_slider {
+    height: 80vh !important;
+    min-height: 80vh !important;
+}
+
+.slider_content {
+    padding-top: 0;
+    margin-top: -120px;
+}
