@@ -1209,3 +1209,40 @@ p.form-message.success, p.form-message.error {
   .back-to-top:hover {
     color: #fff;
     background-color: #E54E1B; }
+
+/*=====nambah=====*/
+
+.back-to-top:hover {
+    color: #fff;
+    background-color: #E54E1B;
+}
+
+
+/* LOGIN NAVBAR */
+#userInfo{
+    color: #fff;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#authArea{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-cta{
+    background-color: #E54E1B;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-cta:hover{
+    background-color: #c63f13;
+}
