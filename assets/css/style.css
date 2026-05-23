@@ -1313,6 +1313,12 @@ p.form-message.success, p.form-message.error {
     margin-left: 10px;
 }
 
+.auth-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #userInfo {
-    margin-left: 18px;
+    margin: 0;
 }
