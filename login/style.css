@@ -14,40 +14,36 @@ body {
     min-height: 100vh;
     padding: 0 10px;
     display: flex;
-    background: #626cd6;
     justify-content: center;
     align-items: center;
+
+    background: linear-gradient(135deg, #3f2b96, #a8c0ff);
 }
 
 /* Login form styling */
-.login_form {
-    width: 100%;
-    max-width: 435px;
-    background: #fff;
-    border-radius: 6px;
-    padding: 41px 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
+.login_form,
 .register_form {
     width: 100%;
-    max-width: 435px;
-    background: #fff;
-    border-radius: 6px;
-    padding: 41px 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    max-width: 420px;
+
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+
+    border-radius: 18px;
+    padding: 40px 30px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
+.login_form h3,
 .register_form h3 {
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
+    margin-bottom: 25px;
+    color: #2c2c54;
+    font-weight: 700;
 }
-
-.login_form h3 {
-    font-size: 20px;
-    text-align: center;
-}
-
 /* Google & Apple button styling */
 
 .login_form .login_option {
@@ -124,19 +120,23 @@ form .input_box label {
 /* Input field styling */
 form .input_box input {
     width: 100%;
-    height: 57px;
-    border: 1px solid #DADAF2;
-    border-radius: 5px;
-    outline: none;
-    background: #F8F8FB;
-    font-size: 17px;
-    padding: 0px 20px;
-    margin-bottom: 25px;
-    transition: 0.2s ease;
+    height: 52px;
+
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+
+    background: #f7f8ff;
+
+    font-size: 15px;
+    padding: 0px 16px;
+
+    transition: 0.3s ease;
 }
 
 form .input_box input:focus {
-    border-color: #626cd6;
+    border-color: #6c63ff;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.15);
 }
 
 form .input_box .password_title {
@@ -162,22 +162,24 @@ a:hover {
 /* Login button styling */
 form button {
     width: 100%;
-    height: 56px;
-    border-radius: 5px;
+    height: 52px;
+
+    border-radius: 12px;
     border: none;
-    outline: none;
-    background: #626CD6;
+
+    background: linear-gradient(135deg, #6c63ff, #3f2b96);
     color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
+
+    font-size: 16px;
+    font-weight: 600;
+
     cursor: pointer;
-    margin-bottom: 28px;
     transition: 0.3s ease;
 }
 
 form button:hover {
-    background: #4954d0;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(63,43,150,0.3);
 }
 
 .alert{
