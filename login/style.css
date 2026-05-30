@@ -1,23 +1,29 @@
 /* Google Fonts Link */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Resetting default styling and setting font-family */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;;
 }
 
 body {
     width: 100%;
     min-height: 100vh;
     padding: 0 10px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(135deg, #3f2b96, #a8c0ff);
+    background: linear-gradient(
+        135deg,
+        #1f1c2c,
+        #3a2f4f,
+        #5c5470
+    );
 }
 
 /* Login form styling */
@@ -172,7 +178,7 @@ form button,
     border-radius: 12px;
     border: none;
 
-    background: linear-gradient(135deg, #6c63ff, #3f2b96);
+    background: #6c63ff;
     color: #fff;
 
     font-size: 16px;
@@ -186,8 +192,9 @@ form button,
 
 form button:hover,
 .social .go a:hover {
+    background: #5548e0;
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(63,43,150,0.3);
+    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
 }
 
 .alert{
