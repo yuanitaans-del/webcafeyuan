@@ -160,9 +160,14 @@ a:hover {
 }
 
 /* Login button styling */
-form button {
+form button,
+.social .go a {
     width: 100%;
     height: 52px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border-radius: 12px;
     border: none;
@@ -173,11 +178,14 @@ form button {
     font-size: 16px;
     font-weight: 600;
 
+    text-decoration: none;
     cursor: pointer;
+
     transition: 0.3s ease;
 }
 
-form button:hover {
+form button:hover,
+.social .go a:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(63,43,150,0.3);
 }
