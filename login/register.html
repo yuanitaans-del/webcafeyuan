@@ -12,54 +12,21 @@
     <!-- Login form container -->
     <form id="registerForm">
   <h3>Register</h3>
-
-  <!-- Username -->
-  <div class="input_box">
     <label for="username">Nama Pengguna</label>
-    <input 
-      type="text" 
-      id="username" 
-      placeholder="Nama Pengguna.." 
-      required="required"
-    />
-  </div>
-
-  <!-- Password -->
-  <div class="input_box">
-    <div class="password_title">
-      <label for="password">Password</label>
+    <input type="text" id="username" placeholder="Username" required="required"/>
+    <label for="username">Email</label>
+    <input type="email" id="email" placeholder="Email" required="required"/>
+    <label for="username">Nama Pengguna</label>
+    <input type="password" id="password" placeholder="Password" required="required"/>
+  <p id="message"></p>
+      <button type="submit">Daftar</button>
+      <div class="social">
+        <div class="go"> <a href="index.html">Login</a></div>
+        <div class="kanan"><i class="fab fa-google"></i>with Google</div>
+      </div>
     </div>
-
-    <input 
-      type="password" 
-      id="password"
-      placeholder="Password.." 
-      required="required"
-    />
-  </div>
-
-  <!-- <p id="message"></p> -->
-
-  <!-- Login Button -->
-  <button type="submit">Daftar</button>
-
-       <div class="social">
-    <div class="go">
-      <a href="index.html">LOGIN</a>
-    </div>
-
-    <div class="kanan">
-      <i class="fab fa-google"></i> Google
-    </div>
-  </div>
-
-  <!-- Home Button -->
-  <button 
-    type="button"
-    onclick="location.href='../index.html';"
-  >
-    Home
-  </button>
+  <p id="message"></p>
+</form>
 
 <script src="js/register.js" defer></script>
 </body>
