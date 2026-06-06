@@ -41,8 +41,10 @@ $(function() {
     
     //===== close navbar-collapse when a  clicked
 
-    $(document).on('click', '.navbar-nav a', function () {
+$(document).on('click', 'a.page-scroll', function () {
+
     alert('clicked');
+
     document.getElementById('navbarSupportedContent').classList.remove('show');
 });
     
