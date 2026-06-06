@@ -40,10 +40,9 @@ $(function() {
     });
     
     //===== close navbar-collapse when a  clicked
-    $(".navbar-nav a").on('click', function () {
-        $(".navbar-collapse").removeClass("show");
-        $(".navbar-toggler").addClass("collapsed").attr("aria-expanded", "false");
-    });
+$(document).on('click', '.navbar-nav a', function () {
+    $('.navbar-collapse').collapse('hide');
+});
     
     //===== Slick Slider
 
@@ -185,12 +184,4 @@ $(function() {
     
     
     
-});
-
-$(document).ready(function () {
-
-    $('.navbar-nav>li>a').on('click', function () {
-        $('.navbar-collapse').collapse('hide');
-    });
-
 });
