@@ -41,7 +41,7 @@ $(function() {
     
     //===== close navbar-collapse when a  clicked
 $(document).on('click', '.navbar-nav a', function () {
-    $('.navbar-collapse').collapse('hide');
+    $('.navbar-collapse').removeClass('show');
 });
     
     //===== Slick Slider
