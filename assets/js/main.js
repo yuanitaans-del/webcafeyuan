@@ -40,7 +40,9 @@ $(function() {
     });
     
     //===== close navbar-collapse when a  clicked
-$(document).on('click', '.navbar-nav a', function () {
+
+    $(document).on('click', '.navbar-nav a', function () {
+    alert('clicked');
     document.getElementById('navbarSupportedContent').classList.remove('show');
 });
     
