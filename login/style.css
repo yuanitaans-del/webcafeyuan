@@ -1,7 +1,7 @@
 /* Google Fonts Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +9,7 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* BODY - SOFT LATTE AESTHETIC */
 body {
     width: 100%;
     min-height: 100vh;
@@ -18,12 +19,11 @@ body {
     justify-content: center;
     align-items: center;
 
-    /* COKLAT AESTHETIC BACKGROUND */
     background: linear-gradient(
         135deg,
-        #2b1d16,
-        #5a3e2b,
-        #c49a6c
+        #f5eee6,
+        #e7d3c2,
+        #c8a98f
     );
 }
 
@@ -33,14 +33,14 @@ body {
     width: 100%;
     max-width: 420px;
 
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(14px);
 
     border-radius: 18px;
     padding: 40px 30px;
 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
 }
 
 /* TITLE */
@@ -49,7 +49,7 @@ body {
     font-size: 22px;
     text-align: center;
     margin-bottom: 25px;
-    color: #3b2a22;
+    color: #4a3426;
     font-weight: 700;
 }
 
@@ -59,7 +59,7 @@ body {
 .nav_buttons,
 .auth_buttons {
     display: flex;
-    gap: 12px; /* INI JARAK TOMBOL */
+    gap: 12px;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
@@ -74,7 +74,7 @@ body {
     border-radius: 10px;
 
     background: #f3e7dc;
-    color: #4a2f20;
+    color: #5a3e2b;
 
     text-decoration: none;
     font-weight: 500;
@@ -84,11 +84,11 @@ body {
 
 .nav_buttons a:hover,
 .auth_buttons a:hover {
-    background: #e6c7a6;
+    background: #e7cdb6;
     transform: translateY(-2px);
 }
 
-/* LOGIN OPTIONS (GOOGLE / APPLE) */
+/* LOGIN OPTION (GOOGLE / APPLE) */
 .login_form .login_option {
     display: flex;
     justify-content: space-between;
@@ -107,14 +107,14 @@ body {
     align-items: center;
     gap: 12px;
 
-    background: #f8f3ef;
+    background: #f9f4ef;
     border: 1px solid #e2d2c3;
 
     border-radius: 8px;
     margin: 30px 0 20px 0;
 
     text-decoration: none;
-    color: #3b2a22;
+    color: #4a3426;
     font-weight: 500;
 
     transition: 0.2s ease;
@@ -122,7 +122,7 @@ body {
 
 .login_form .login_option .option a:hover {
     background: #ead6c5;
-    border-color: #b98a63;
+    border-color: #c9a585;
 }
 
 .login_form .login_option .option a img {
@@ -133,6 +133,7 @@ body {
 .login_form p {
     text-align: center;
     font-weight: 500;
+    color: #5a3e2b;
 }
 
 /* SEPARATOR */
@@ -155,7 +156,7 @@ body {
     top: 50%;
     left: 0;
     height: 1px;
-    background: #c2b1a6;
+    background: #d6c2b3;
 }
 
 /* INPUT */
@@ -167,7 +168,7 @@ form .input_box label {
     display: block;
     font-weight: 500;
     margin-bottom: 8px;
-    color: #3b2a22;
+    color: #4a3426;
 }
 
 form .input_box input {
@@ -177,7 +178,7 @@ form .input_box input {
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 12px;
 
-    background: #f7f2ee;
+    background: #fbf7f3;
 
     font-size: 15px;
     padding: 0 16px;
@@ -186,9 +187,9 @@ form .input_box input {
 }
 
 form .input_box input:focus {
-    border-color: #8b5e3c;
+    border-color: #b98a63;
     background: #fff;
-    box-shadow: 0 0 0 4px rgba(139, 94, 60, 0.2);
+    box-shadow: 0 0 0 4px rgba(185, 138, 99, 0.2);
 }
 
 form .input_box .password_title {
@@ -196,10 +197,10 @@ form .input_box .password_title {
     justify-content: space-between;
 }
 
-/* LINK */
+/* LINKS */
 a {
     text-decoration: none;
-    color: #8b5e3c;
+    color: #b07445;
     font-weight: 500;
 }
 
@@ -220,7 +221,7 @@ form button,
     border-radius: 12px;
     border: none;
 
-    background: #8b5e3c;
+    background: #b98a63;
     color: #fff;
 
     font-size: 16px;
@@ -234,9 +235,9 @@ form button,
 
 form button:hover,
 .social .go a:hover {
-    background: #6e462d;
+    background: #9a6f4b;
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 /* ALERT */
