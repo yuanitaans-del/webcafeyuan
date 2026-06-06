@@ -19,13 +19,14 @@ body {
     justify-content: center;
     align-items: center;
 
-    /* latte / cappuccino vibe */
+    /* hanya background yang orange */
     background: linear-gradient(
         135deg,
-        #f3e9df,
-        #e2c9b3,
-        #c8a27a
+        #fff3e8,
+        #ffd6b3,
+        #E54E1B
     );
+}
 }
 
 /* FORM */
@@ -203,23 +204,20 @@ form button,
     border-radius: 12px;
     border: none;
 
-    background: #c49a6c;
+    background: #E54E1B;
     color: #fff;
 
     font-size: 16px;
     font-weight: 600;
 
     cursor: pointer;
-
     transition: 0.3s ease;
     margin-top: 12px;
 }
 
 form button:hover,
 .social .go a:hover {
-    background: #a97a50;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    background: #c63f13;
 }
 
 /* ALERT */
