@@ -389,7 +389,7 @@ p {
   87.5% {
     -webkit-transform: rotate(945deg);
     -moz-transform: rotate(945deg);
-    -moz-transform: rotate(945deg);
+    -ms-transform: rotate(945deg);
     -o-transform: rotate(945deg);
     transform: rotate(945deg); }
   to {
