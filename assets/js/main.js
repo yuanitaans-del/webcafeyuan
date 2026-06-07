@@ -21,6 +21,26 @@ $(function() {
     });
     
     
+    //===== Hide/Show navbar on scroll
+    
+    let lastScrollTop = 0;
+    const navbar = $(".header_navbar");
+    
+    $(window).on('scroll', function() {
+        let currentScroll = $(this).scrollTop();
+        
+        if (currentScroll > lastScrollTop && currentScroll > 300) {
+            // Scrolling DOWN - hide navbar
+            navbar.addClass('navbar-hidden');
+        } else {
+            // Scrolling UP - show navbar
+            navbar.removeClass('navbar-hidden');
+        }
+        
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+    
+    
     //===== Section Menu Active
 
     var scrollLink = $('.page-scroll');
@@ -106,7 +126,7 @@ $(document).on('click', 'a.page-scroll', function () {
         slidesToScroll: 1,
         arrows: false,
 //        prevArrow: '<span class="prev"><i class="lni lni-chevron-left"></i></span>',
-//        nextArrow: '<span class="next"><i class="lni lni-chevron-right"></i></span>',
+//        nextArrow: '<span class="next"><i class="lni lni-chevron-left"></i></span>',
         responsive: [
             {
               breakpoint: 1200,
@@ -172,6 +192,7 @@ $(document).on('click', 'a.page-scroll', function () {
     
     
     //===== 
+    
     
     
     
