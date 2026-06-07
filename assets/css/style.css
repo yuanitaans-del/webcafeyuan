@@ -1294,3 +1294,49 @@ p {
 
 .mt-10 {
   margin-top: 10px; }
+
+
+/* ===== FORM CONTACT UPGRADE ===== */
+.single_form input,
+.single_form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.single_form input:focus,
+.single_form textarea:focus {
+    border-color: #e74c3c;
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.2);
+}
+
+.single_form textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+/* tombol kirim */
+.main-btn {
+    background: #e74c3c;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* spacing form */
+.single_form {
+    margin-bottom: 15px;
+}
