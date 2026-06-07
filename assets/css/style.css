@@ -1340,3 +1340,9 @@ p {
 .single_form {
     margin-bottom: 15px;
 }
+
+.coffee_content,
+.about_content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
