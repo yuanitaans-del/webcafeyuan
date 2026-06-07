@@ -389,7 +389,7 @@ p {
   87.5% {
     -webkit-transform: rotate(945deg);
     -moz-transform: rotate(945deg);
-    -ms-transform: rotate(945deg);
+    -moz-transform: rotate(945deg);
     -o-transform: rotate(945deg);
     transform: rotate(945deg); }
   to {
@@ -747,6 +747,63 @@ p {
 .sticky .navbar-nav .nav-item.active > a, .sticky .navbar-nav .nav-item:hover > a {
   color: #E54E1B; }
 
+/*===== NAV RIGHT - LOGIN SECTION =====*/
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+  padding: 0 20px; }
+  @media (max-width: 767px) {
+    .nav-right {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+      padding: 10px 0;
+      margin-left: 0; } }
+
+#userInfo {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+  margin: 0; }
+  @media (max-width: 767px) {
+    #userInfo {
+      color: #222; } }
+
+.sticky #userInfo {
+  color: #222; }
+
+#authArea {
+  display: flex; }
+
+.nav-cta {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 0;
+  padding: 0 20px;
+  font-size: 15px;
+  line-height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #E54E1B;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s; }
+  .nav-cta:hover {
+    background-color: rgba(229, 78, 27, 0.8);
+    color: #fff; }
+  @media (max-width: 767px) {
+    .nav-cta {
+      width: 100%; } }
+
 /*===== SLIDER =====*/
 .single_slider {
   height: 750px;
@@ -1002,54 +1059,238 @@ p {
       -o-transform: translateX(-50%);
       transform: translateX(-50%); }
     .customer_active .slick-dots li.slick-active button {
-      background-color: #E54E1B;
+      background-color: #E54E1B; }
 
-/* ===== AUTH NAVBAR ===== */
+/*===========================
+      07.FOOTER css 
+===========================*/
+.footer_area {
+  background-color: #2A2A2A;
+  padding-top: 0; }
 
-#authArea {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-left: 18px;
-}
-
-.auth-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-left: 20px;
-}
-
-#userInfo {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    color: #f5e6d3;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.sticky #userInfo {
-    color: #6f4e37;
-}
-
-.nav-cta {
-    background-color: #E54E1B;
+.footer_subscribe {
+  background-color: #E54E1B;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .footer_subscribe .subscribe_title h4 {
+    font-size: 36px;
     color: #fff;
-    border: none;
-    padding: 8px 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
+    margin-bottom: 15px; }
+    @media (max-width: 767px) {
+      .footer_subscribe .subscribe_title h4 {
+        font-size: 24px; } }
+  .footer_subscribe .subscribe_title p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400; }
 
-.nav-cta:hover {
-    background-color: #c63f13;
-}
+.footer_subscribe .subscribe_form {
+  position: relative; }
+  .footer_subscribe .subscribe_form form {
+    position: relative; }
+    .footer_subscribe .subscribe_form form input {
+      width: 100%;
+      height: 55px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 0;
+      border-radius: 5px;
+      padding: 0 20px;
+      color: #fff;
+      font-size: 15px; }
+      .footer_subscribe .subscribe_form form input::placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+    .footer_subscribe .subscribe_form form button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 55px;
+      width: 55px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 0;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+    .footer_subscribe .subscribe_form form button:hover {
+      background: rgba(255, 255, 255, 0.3); }
+
+.footer_widget {
+  background-color: #2A2A2A; }
+
+.footer_about {
+  position: relative; }
+  .footer_about .footer_title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .footer_about p {
+    color: #ABABAB;
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 20px; }
+  .footer_about .social {
+    padding-top: 0; }
+    .footer_about .social li {
+      display: inline-block;
+      margin-right: 15px; }
+      .footer_about .social li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #E54E1B;
+        color: #fff;
+        border-radius: 5px;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s; }
+        .footer_about .social li a:hover {
+          background-color: rgba(229, 78, 27, 0.8); }
+
+.footer_link {
+  position: relative; }
+  .footer_link .footer_title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .footer_link li {
+    display: block; }
+    .footer_link li a {
+      color: #ABABAB;
+      font-size: 15px;
+      line-height: 30px;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+      .footer_link li a:hover {
+        color: #E54E1B;
+        padding-left: 10px; }
+    .footer_link li {
+      color: #ABABAB;
+      font-size: 15px;
+      line-height: 30px; }
+
+.footer_instagram {
+  position: relative; }
+  .footer_instagram .footer_title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .footer_instagram .instagram_image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; }
+    .footer_instagram .instagram_image a {
+      width: calc(33.333% - 6px);
+      height: 70px;
+      border-radius: 5px;
+      overflow: hidden; }
+      .footer_instagram .instagram_image a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+.footer_copyright {
+  background-color: #222;
+  padding: 30px 0; }
+  .footer_copyright .copyright {
+    position: relative;
+    color: #ABABAB;
+    font-size: 15px; }
+    .footer_copyright .copyright a {
+      color: #E54E1B; }
+
+.footer_shape {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3; }
+
+/*===========================
+    BACK TO TOP css 
+===========================*/
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #E54E1B;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+  .back-to-top:hover {
+    background-color: rgba(229, 78, 27, 0.8); }
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  bottom: 50px; }
+
+@media (max-width: 767px) {
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    bottom: 20px;
+    right: 20px; }
+    .back-to-top.show {
+      bottom: 40px; } }
+
+/*===========================
+    UTILITY CLASSES
+===========================*/
+.pt-120 {
+  padding-top: 120px; }
+
+.pt-80 {
+  padding-top: 80px; }
+
+.pt-50 {
+  padding-top: 50px; }
+
+.pb-130 {
+  padding-bottom: 130px; }
+
+.pb-95 {
+  padding-bottom: 95px; }
+
+.pb-50 {
+  padding-bottom: 50px; }
+
+.pb-30 {
+  padding-bottom: 30px; }
+
+.pb-10 {
+  padding-bottom: 10px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-45 {
+  margin-top: 45px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mt-10 {
+  margin-top: 10px; }
