@@ -1003,3 +1003,53 @@ p {
       transform: translateX(-50%); }
     .customer_active .slick-dots li.slick-active button {
       background-color: #E54E1B;
+
+/* ===== AUTH NAVBAR ===== */
+
+#authArea {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: 18px;
+}
+
+.auth-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+#userInfo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: #f5e6d3;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.sticky #userInfo {
+    color: #6f4e37;
+}
+
+.nav-cta {
+    background-color: #E54E1B;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-cta:hover {
+    background-color: #c63f13;
+}
